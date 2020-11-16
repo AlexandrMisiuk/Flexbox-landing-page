@@ -1,0 +1,318 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 1100px;
+    min-height: 100vh;
+    height: auto;
+}
+header{
+    background-image: url(../img/fon_1.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+header>div:first-child{
+    display: flex;
+    padding: 2% 16%;
+    justify-content: space-between;
+    border-bottom: 2px solid #61616194;
+}
+h1{
+    font-style: italic;
+    color: #ffffff;
+    text-shadow: 0 0 5px #000000;
+}
+h1::before{
+    content: '\f19c';
+    font-family: FontAwesome;
+    font-style: normal;
+    margin-right: 10px;
+    color: #d0be16;
+}
+header>div:first-child>div>p:first-of-type{
+    font-size: 0.8rem;
+}
+header>div:first-child>div>a:first-of-type{
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+header>div:first-child>div{
+    text-shadow: 0 0 5px #000000;
+    color: #ffffff;
+    position: relative;
+}
+header>div:first-child>div::before{
+    content: '\f879';
+    font-family: FontAwesome;
+    font-size: 1.3rem;
+    position: absolute;
+    transform: translateX(-30px) translateY(5px);
+}
+header>div:last-child{
+    display: flex;
+    justify-content: center;
+    height: 425px;
+    padding: 0 12%;
+    padding-top: 30px;
+    position: relative;
+}
+.money{
+    height: 20%;
+}
+.money>h2{
+    font-size: 2rem;
+    font-weight: 400;
+    color: #ffffff;
+    text-shadow: 0 0 5px #000000;
+}
+.money>h2:first-of-type{
+    transform: translateX(-100px);
+}
+.money>h2:last-of-type{
+    transform: translateX(-55px);
+}
+.yellow{
+    color: #d0be16;
+}
+.woman,
+.woman img{
+    height: 100%;
+}
+form{
+    width: 420px;
+    padding: 20px 30px 10px;
+    background-color: #011d8a;
+    border-radius: 0 50px 0 0;
+    box-shadow: 0 0 5px #000000;
+    transform: translateX(-30px) translateY(20px);
+}
+form>div:first-of-type,
+form>div:last-of-type{
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+}
+form>div>h4{
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+form>div>h4+p{
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+form>div:nth-last-of-type(2){
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+form>div:nth-last-of-type(2)>input{
+    width: 48%;
+    padding: 2px 10px;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+form>div:nth-last-of-type(2)>input:first-of-type{
+    width: 100%;
+}
+form>div:nth-last-of-type(2)>textarea::placeholder,
+form>div:nth-last-of-type(2)>input::placeholder{
+    font-size: 1rem;
+}
+form>div:nth-last-of-type(2)>textarea{
+    min-width: 100%;
+    min-height: 3.5rem;
+    padding: 2px 10px;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+form>div:last-of-type>button{
+    width: 35%;
+    padding: 8px 0px;
+    margin-bottom: 10px;
+    background-color: #edd30a;
+    border-radius: 5px;
+    border: 1px solid #edd30a;
+    box-shadow: 0 0 5px #000000;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #000000;
+    outline: none;
+}
+form>div:last-of-type>button:hover{
+    text-shadow: 0 0 10px #ffffff;
+    cursor: pointer;
+}
+form>div:last-of-type>p{
+    font-size: 0.7rem;
+}
+main{
+    display: flex;
+    flex-flow: column nowrap;
+}
+#digit{
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 350px;
+    padding: 0 18%;
+    background-color: #303030;
+}
+.dig{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15%;
+}
+.dig>h4{
+    font-size: 2rem;
+    color: #939eb0;
+    text-shadow: 0 0 5px #000000;
+    padding-bottom: 25px;
+    text-align: center;
+}
+.dig>hr{
+    width: 40px;
+    border-color: #d0be16;
+}
+.dig>p{
+    padding-top: 25px;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-shadow: 0 0 5px #000000;
+    text-align: center;
+    font-size: 1rem;
+}
+#quote{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    height: 350px;
+    padding: 0 18%;
+    background-image: url(../img/fon_2.png);
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: center;
+}
+#quote>h3,
+#quote>div>i,
+#quote>blockquote,
+.businessman>div:last-child p{
+    text-shadow: 0 0 5px #00000073;
+}
+#quote>h3{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #001d85;
+    margin-top: 35px;
+}
+#quote>div>i{
+    margin: 20px 0;
+    font-style: italic;
+    font-size: 1.8rem;
+    color: #edd30a;
+}
+#quote>blockquote{
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.businessman{
+    height: 25%;
+    width: 31%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.businessman>div:first-child{
+    height: 100%;
+}
+.businessman img{
+    height: 100%;
+    border-radius: 50%;
+}
+.businessman>div:last-child p{
+    font-style: italic;
+    text-align: center;
+    padding-left: 5px;
+}
+.businessman>div:last-child p:first-child{
+    font-size: 1.4rem;
+}
+.businessman>div:last-child p:last-child{
+    font-size: 1rem;
+}
+#contacts{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-around;
+    height: 350px;
+    padding: 0 18%;
+    background-color: #011d8a;
+}
+#contacts>div:last-child>p{
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 0 0 5px #00000073;
+    line-height: 1.7rem;
+    font-style: italic;
+}
+#contacts>div:first-child{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    width: 100%;
+}
+#contacts>div:first-child>div:nth-child(2){
+    height: 70px;
+    border-right: 2px solid #edd30a;
+}
+.contact{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+.contact>a:first-child{
+    height: 70px;
+    width: 70px;
+    padding: 18px 18px;
+    margin-bottom: 30px;
+    background-color: #edd30a;
+    box-shadow: 0 0 5px #000000;
+    color: #000000;
+    font-size: 2rem;
+}
+.contact>a:last-child{
+    color: #ffffff;
+    font-size: 1.2rem;
+    text-shadow: 0 0 5px #00000073;
+}
+footer{
+    height: 40px;
+    background-color: #09185d;
+}
+footer>p{
+    text-align: center;
+    line-height: 40px;
+    vertical-align: middle;
+    font-style: italic;
+    color: #ffffff;
+}
